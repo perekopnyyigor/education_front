@@ -1,0 +1,54 @@
+
+.instruments
+{
+    margin-left: 1%;
+    height: 80vh;
+    width: 15%;
+    float: left;
+    border: 2px solid #06266f;
+    border-radius: 5px;
+    overflow: scroll;
+}
+
+.redact
+{
+    height: 80vh;
+    margin-left: 1%;
+    width: 40%;
+    float: left;
+    border: 2px solid #06266f;
+    border-radius: 5px;
+}
+.view
+{
+    height: 80vh;
+    margin-left: 1%;
+    width: 40%;
+    float: left;
+
+    overflow: scroll;
+}
+.view img
+{
+    max-width: 40%;
+}
+.instruments details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: .5em .5em 0;
+}
+
+.instruments summary {
+    font-weight: bold;
+    margin: -.5em -.5em 0;
+    padding: .5em;
+}
+
+.instruments details[open] {
+    padding: .5em;
+}
+
+.instruments details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}

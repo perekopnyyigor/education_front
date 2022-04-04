@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c5fe1b53-86b0-4ef9-baea-9f03eb824e1a" name="lern.tiwy" url="http://195.210.46.91">
+        <fileTransfer rootFolder="/lern.tiwy.ru" accessType="FTPS" host="195.210.46.91" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
