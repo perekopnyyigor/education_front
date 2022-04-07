@@ -52,3 +52,38 @@
     border-bottom: 1px solid #aaa;
     margin-bottom: .5em;
 }
+.card
+{
+
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    font-family: Open Sans, Verdana, sans-serif;
+}
+
+.red h2
+{
+    border-bottom: 3px solid hsl(0, 78%, 62%);
+}
+.orange h2
+{
+    border-bottom: 3px solid hsl(34, 97%, 64%);
+}
+.cyan h2
+{
+    border-bottom: 3px solid hsl(180, 62%, 55%);
+}
+.blue h2
+{
+    border-bottom: 3px solid hsl(212, 86%, 64%);
+}
+.second
+{
+    margin-left: 60px;
+}
+.third
+{
+    margin-left: 120px;
+}

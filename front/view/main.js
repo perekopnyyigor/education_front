@@ -42,7 +42,7 @@ class MainView {
             text +="<div class='cours_name'>"+cours[i].name+"</div>";
             text +=  "<img src='https://lern.tiwy.ru/"+cours[i].img+"'></div></a>";
         }
-        text +="<textarea name=\"area1\" cols=\"40\"></textarea></div>";
+
         document.getElementById("main").innerHTML=text;
     }
     static articles(article_js)

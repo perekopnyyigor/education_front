@@ -16,7 +16,7 @@ class CabinetView {
         else
             text+=CabinetView.enter();
 
-        text +="<textarea name=\"area1\" cols=\"40\"></textarea></div>";
+
 
 
         bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });

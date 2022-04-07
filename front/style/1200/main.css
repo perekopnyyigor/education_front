@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+html {
+
+    background-image: url("https://lern.tiwy.ru/books.jpg");
+
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.main_menu{
+
+    background-color:#2b6684;
+    height: 50px;
+    width:100%;
+    padding-left:10%;
+
+    padding-top:10px;
+
+
+}
+.main_punkt
+{
+    display: inline;
+    margin-right: 50px;
+    font-weight:bold;
+    color:white;
+    font-size: 35px;
+    font-family: "Open Sans";
+}
+.main_punkt a
+{
+    text-decoration:none;
+    color:white;
+}
+.name
+{
+
+    height: 70px;
+    color: #06266f;
+    font-size: 40px;
+    font-weight:bold;
+    font-family: "Open Sans";
+    padding-left:10%;
+}
+.cours_list
+{
+    margin-top:20px;
+    margin-left:10%;
+    width: 80%;
+    margin-bottom:50px;
+    float:left;
+
+}
+.cours
+{
+    width: 350px;
+    height: 200px;
+    margin-left:30px;
+    margin-bottom:20px;
+    padding:20px;
+    box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+    border-radius: 5px;
+    float:left;
+    background-color:white;
+}
+
+.cours img
+{
+    margin-top:25px;
+    width:100px;
+    height:100px;
+    float:left;
+}
+.cours_list a
+{
+    text-decoration: none;
+    color:black;
+
+}
+.main_name
+{
+    width:30%;
+    height:50px;
+    font-family: "Open Sans";
+    font-size:30px;
+    font-weight:bold;
+    color:white;
+    background: linear-gradient(to right, #2b6684, white);
+    padding:5px;
+    padding-left:20px;
+    margin:10px;
+}
+.cours_name
+{
+    height:50px;
+    font-family: "Open Sans";
+    font-size:25px;
+    font-weight:bold;
+    color:#012e67;
+}
+.cours_description
+{
+    margin-top:25px;
+    margin-left:120px;
+    height:50px;
+    font-family: "Open Sans";
+    font-size:15px;
+    font-weight:bold;
+    color:#012e67;
+}

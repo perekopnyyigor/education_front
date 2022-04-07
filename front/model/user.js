@@ -95,13 +95,14 @@ class User {
         xhttp.send(formData);
         User.message = xhttp.responseText;
     }
-    static getRepeat()
+    static getRepeat(id="")
     {
         User.ini();
         const xhttp = new XMLHttpRequest();
         xhttp.open("POST", "https://lern.tiwy.ru/back/responze/user.php?action=get_repeat", false);
         let formData = new FormData();
         formData.append("user", User.id);
+        formData.append("cours", id);
         xhttp.send(formData);
         User.message = xhttp.responseText;
     }

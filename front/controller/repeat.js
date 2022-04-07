@@ -2,17 +2,22 @@ class RepeatController {
     static onLoad()
     {
         MainView.head();
-        User.getRepeat();
+
         CabinetView.onload();
+        User.findMyCours();
+        RepeatView.showCours(User.message);
+
+
+        User.getRepeat();
         RepeatView.onLoad(User.message);
 
         //alert(User.message);
     }
-    static goToArticle(id)
+    static goToArticle(id,cours_id)
     {
         MainView.head();
 
-        User.getRepeat();
+        User.getRepeat(cours_id);
         RepeatView.onLoad(User.message);
 
         Article.getArticle(id);
@@ -20,6 +25,18 @@ class RepeatController {
 
         User.getLesson(id);
         RepeatView.lern(id,User.message);
+    }
+    static goToArticle1(cours_id)
+    {
+        MainView.head();
+
+        CabinetView.onload();
+        User.findMyCours();
+        RepeatView.showCours(User.message);
+
+
+        User.getRepeat(cours_id);
+        RepeatView.onLoad(User.message);
     }
     static addLesson(article_id)
     {

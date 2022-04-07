@@ -1,0 +1,155 @@
+.cours_list_cab
+{
+    margin-top:20px;
+
+    width: 60%;
+    margin-bottom:50px;
+    float:left;
+
+}
+.cours_cab
+{
+    width: 250px;
+    height: 120px;
+    margin-left:30px;
+    margin-bottom:20px;
+    padding:20px;
+    box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+    border-radius: 5px;
+    float:left;
+    background-color:white;
+    text-decoration:none;
+    color:#2b6684;
+    font-family: "Open Sans";
+    font-size:20px;
+    font-weight:900;
+}
+.cours_cab img
+{
+    margin-top:25px;
+    width:100px;
+    height:100px;
+    float:left;
+}
+.cours_cab button
+{
+
+    color: white;
+    background-color:#2b6684;
+    box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+    width:150px;
+    font-family: "Open Sans";
+}
+.form_cors_redact
+{
+    margin-top:50px;
+
+    width: 40%;
+    margin-left:25%;
+}
+/*список глав*/
+.chapter_list
+{
+    margin-left:0%;
+    width: 20%;
+    margin-bottom:50px;
+    float: left;
+}
+.chapter_list .chapter
+{
+    font-size: 20px;
+    height:60px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 5px;
+
+    color: white;
+    background-color:#2b6684;
+    box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+    width:250px;
+
+    font-family: "Open Sans";
+    font-size:15px;
+    font-weight:bold;
+
+}
+.chapter_list .chapter .chapter_name
+{
+    width:200px;
+    float:left;
+}
+.chapter_list .chapter button
+{
+    float:left;
+
+}
+
+.chapter_list .article
+{
+    font-size: 20px;
+    margin-left:40px;
+
+    padding: 10px;
+    padding-left: 10px;
+    margin-top: 5px;
+
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+    width:300px;
+    height:70px;
+    color:#2b6684;
+    font-family: "Open Sans";
+    font-size:15px;
+    font-weight:bold;
+}
+.chapter_list .article button
+{
+    color: white;
+    background-color:#2b6684;
+    box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+    width:150px;
+    font-family: "Open Sans";
+    float:left;
+}
+/*свойство*/
+.seo_form
+{
+    margin-left:5%;
+    width: 40%;
+    float: left;
+}
+.seo_form div
+{
+    margin-top:10px;
+    font-family: "Open Sans";
+    font-size:20px;
+    font-weight:bold;
+    color:#012e67;
+}
+.name_seo_form
+{
+
+    width:30%;
+}
+.seo_form input
+{
+    height:40px;
+
+    border: 2px solid #2b6684;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+    width:300px;
+
+}
+.seo_form textarea
+{
+    height:80px;
+
+    border: 2px solid #2b6684;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+    width:300px;
+
+}

@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
+.chapter_list_show
+{
+    margin-left:10%;
+
+    margin-bottom:50px;
+    float:left;
+
+}
+.chapter_list_show .chapter_show
+{
+    font-size: 20px;
+    height:60px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 5px;
+
+    color: white;
+    background-color:#2b6684;
+    box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+    width:250px;
+    font-family: "Open Sans";
+}
+.chapter_list_show .chapter_show .chapter_name_show
+{
+
+    float:left;
+
+}
+.chapter_list_show a
+{
+    text-decoration:none;
+    color:#2b6684;
+    font-family: "Open Sans";
+}
+.chapter_list_show_show .chapter button_show
+{
+    float:left;
+
+}
+
+.chapter_list_show .article_show
+{
+    font-size: 20px;
+    margin-left:40px;
+    height:60px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 5px;
+
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+    width:250px;
+}
