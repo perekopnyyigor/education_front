@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
-@media (min-width: 1201px) {
+@media (max-width: 600px) {
     html {
 
         background-image: url("https://lern.tiwy.ru/books.jpg");
@@ -13,11 +13,11 @@
     .main_menu {
 
         background-color: #2b6684;
-        height: 50px;
+        height: 40px;
         width: 100%;
         padding-left: 10%;
 
-        padding-top: 10px;
+        padding-top: 5px;
 
 
     }
@@ -27,7 +27,7 @@
         margin-right: 50px;
         font-weight: bold;
         color: white;
-        font-size: 35px;
+        font-size: 25px;
         font-family: "Open Sans";
     }
 
@@ -38,27 +38,27 @@
 
     .name {
 
-        height: 70px;
+        height: 40px;
         color: #06266f;
-        font-size: 40px;
+        font-size: 20px;
         font-weight: bold;
         font-family: "Open Sans";
-        padding-left: 10%;
+        padding-left: 15%;
     }
 
     .cours_list {
         margin-top: 20px;
-        margin-left: 10%;
-        width: 80%;
+        margin-left: 5%;
+        width: 90%;
         margin-bottom: 50px;
         float: left;
 
     }
 
     .cours {
-        width: 350px;
-        height: 200px;
-        margin-left: 30px;
+        width: 280px;
+        height: 150px;
+        margin-left: 20px;
         margin-bottom: 20px;
         padding: 20px;
         box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
@@ -68,7 +68,7 @@
     }
 
     .cours img {
-        margin-top: 25px;
+        margin-top: 10px;
         width: 100px;
         height: 100px;
         float: left;
@@ -81,10 +81,10 @@
     }
 
     .main_name {
-        width: 30%;
-        height: 50px;
+        width: 90%;
+        height: 30px;
         font-family: "Open Sans";
-        font-size: 30px;
+        font-size: 20px;
         font-weight: bold;
         color: white;
         background: linear-gradient(to right, #2b6684, white);
@@ -96,7 +96,7 @@
     .cours_name {
         height: 50px;
         font-family: "Open Sans";
-        font-size: 25px;
+        font-size: 20px;
         font-weight: bold;
         color: #012e67;
     }

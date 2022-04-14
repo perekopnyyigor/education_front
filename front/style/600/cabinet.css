@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
-@media (min-width: 1201px) {
+@media (max-width: 600px) {
     .form {
         margin-left: 10%;
         width: 40%;

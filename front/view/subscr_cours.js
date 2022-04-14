@@ -21,6 +21,13 @@ class SubscrCoursView {
     {
         let chapter = JSON.parse(chapter_js);
         let text = document.getElementById("main").innerHTML;
+        text +="<div class=\"hamburger-menu\">";
+        text +="<input id=\"menu__toggle\" type=\"checkbox\" />";
+        text +="<label class=\"menu__btn\" for=\"menu__toggle\">";
+        text +="<span></span>";
+
+
+        text +="</label>";
         text +="<div class='chapter_list_show'>";
         for (let i=0; i<chapter.length;i++) {
             text +="<div class='chapter_show'><div class='chapter_name_show'>"+chapter[i].name+"</div></div>";

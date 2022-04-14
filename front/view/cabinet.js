@@ -2,11 +2,11 @@ class CabinetView {
 
     static onload()
     {
-        var script = document.createElement('script');
+       /* var script = document.createElement('script');
 
         script.src = 'NicEdit/nicEdit.js';
         script.async = false;
-        document.head.appendChild(script);
+        document.head.appendChild(script);*/
 
         User.ini();
 
@@ -19,7 +19,7 @@ class CabinetView {
 
 
 
-        bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+        //bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
         document.getElementById("main").innerHTML=text;
     }
     static reg()
@@ -67,6 +67,11 @@ class CabinetView {
     {
 
         let text="";
+        text +="<div class=\"hamburger-menu\">";
+        text +="<input id=\"menu__toggle\" type=\"checkbox\" />";
+        text +="<label class=\"menu__btn\" for=\"menu__toggle\">";
+        text +="<span></span>";
+        text +="</label>";
         text+="<div class='cabinet_menu'>";
         text+="<div onclick='SubscrCoursController.onLoad()' class='cabinet_menu_punkt'>Курсы</div>";
         text+="<div onclick='RepeatController.onLoad()' class='cabinet_menu_punkt'>Для повторения</div>";

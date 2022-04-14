@@ -54,7 +54,7 @@ class MainView {
 
 
         for (let i=0; i<article.length;i++) {
-            text +="<a href='https://lern.tiwy.ru/?type=article&id="+article[i].id+"'>";
+            text +="<a href='https://lern.tiwy.ru/back/responze/article.php?action=article_seo&id="+article[i].id+"'>";
 
             text +="<div class='cours'>";
             text +="<div class='cours_name'>"+article[i].name+"</div>";
@@ -67,3 +67,4 @@ class MainView {
         document.getElementById("main").innerHTML=text;
     }
 }
+//8705

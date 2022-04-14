@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
-@media (min-width: 1200px) {
+@media (max-width: 600px) {
     .chapter_list_show {
         margin-left: 1%;
-        width:450px;
+        width:320px;
         padding-left:20px;
         margin-bottom: 50px;
         float: left;
         overflow:scroll;
-        height: 80vh;
+
     }
 
     .chapter_list_show .chapter_show {
@@ -20,7 +20,7 @@
         color: white;
         background-color: #2b6684;
         box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
-        width: 300px;
+        width: 250px;
         font-family: "Open Sans";
     }
 
@@ -51,6 +51,6 @@
 
         background-color: white;
         box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
-        width: 300px;
+        width: 250px;
     }
 }
