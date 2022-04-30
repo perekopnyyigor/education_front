@@ -41,7 +41,7 @@
 
 
     /* контейнер меню */
-    .chapter_list_show , .cabinet_menu{
+    .chapter_list_show , .cabinet_menu, .repeat_menu{
         display: block;
         position: fixed;
         visibility: hidden;
@@ -75,6 +75,10 @@
         left: 0;
     }
     #menu__toggle:checked ~  .cabinet_menu{
+        visibility: visible;
+        left: 0;
+    }
+    #menu__toggle:checked ~  .repeat_menu{
         visibility: visible;
         left: 0;
     }

@@ -38,4 +38,24 @@
         font-family: "Open Sans";
     }
 
+    .menu_lern {
+
+        height: 50px;
+        width: 100%;
+        padding-left: 20%;
+        padding-top: 10px;
+
+    }
+
+    .menu_lern_punkt {
+        display: inline;
+        margin-right: 50px;
+        font-weight: bold;
+        color: #2b6684;
+        font-size: 30px;
+        font-family: "Open Sans";
+    }
+
+
+
 }

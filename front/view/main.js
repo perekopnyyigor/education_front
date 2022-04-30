@@ -58,10 +58,11 @@ class MainView {
 
             text +="<div class='cours'>";
             text +="<div class='cours_name'>"+article[i].name+"</div>";
-
-            text +="<img src='https://lern.tiwy.ru/"+article[i].img+"'>";
-
-            text +="<div class='cours_description'>"+ article[i].description+"</div></div></a>";
+            if(article[i].img!=null)
+                text +="<img src='https://lern.tiwy.ru/"+article[i].img+"'>";
+            if(article[i].description!=null)
+                text +="<div class='cours_description'>"+ article[i].description+"</div>";
+            text +="</div></a>";
         }
 
         document.getElementById("main").innerHTML=text;

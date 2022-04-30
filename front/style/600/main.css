@@ -1,14 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
 @media (max-width: 600px) {
-    html {
 
-        background-image: url("https://lern.tiwy.ru/books.jpg");
-
-        background-size: cover;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: top;
-    }
 
     .main_menu {
 
