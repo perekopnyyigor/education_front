@@ -31,6 +31,7 @@ class MyCoursView
     {
         let cours = JSON.parse(cours_js);
         let text = document.getElementById("main").innerHTML;
+        text +="<div>Мои курсы</div>";
         text +="<div class='cours_list_cab'>";
         for (let i=0; i<cours.length;i++) {
             text +="<div class='cours_cab'><img src='https://lern.tiwy.ru/"+cours[i].img+"'>"+cours[i].name;

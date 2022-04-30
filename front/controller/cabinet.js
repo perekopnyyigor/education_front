@@ -3,6 +3,9 @@ class CabinetController {
     {
         MainView.head();
         CabinetView.onload();
+        User.findSubscrib();
+        SubscrCoursView.onLoad();
+        SubscrCoursView.cours(User.message);
     }
     static reg()
     {

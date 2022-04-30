@@ -8,6 +8,7 @@ class RepeatView {
         text +="<label class=\"menu__btn\" for=\"menu__toggle\">";
         text +="<span></span>";
         text +="</label>";
+
         text+="<div class='repeat_menu'>";
         for (let i=0; i<lesson.length;i++) {
 
@@ -52,9 +53,10 @@ class RepeatView {
         text +="</div>";
 
         text += "<div id='view' class='view'>";
-        for (let i=0; i<card.length;i++)
-        {
-            text += "<div id='view' class='card'>"+card[i].name+"</div>";
+        if (card!=null ) {
+            for (let i = 0; i < card.length; i++) {
+                text += "<div id='view' class='card'><details><summary>" + card[i].name + "</summary>" + card[i].text + "</details></div>";
+            }
         }
         text +="</div>";
         document.getElementById("main").innerHTML=text;
@@ -66,6 +68,7 @@ class RepeatView {
     {
         let cours = JSON.parse(cours_js);
         let text = document.getElementById("main").innerHTML;
+        text +="<div>Для повторения</div>";
         text +="<div class='cours_list_cab'>";
         for (let i=0; i<cours.length;i++) {
             text +="<div class='cours_cab' onclick='RepeatController.goToArticle("+null+","+cours[i].id+")'><img src='https://lern.tiwy.ru/"+cours[i].img+"'>"+cours[i].name;
