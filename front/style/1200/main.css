@@ -2,7 +2,7 @@
 @media (min-width: 1201px) {
     html {
 
-        background-image: url("https://lern.tiwy.ru/books.jpg");
+        background-image: url("https://tiwy.ru/books.jpg");
 
         background-size: cover;
         background-attachment: fixed;
@@ -41,6 +41,15 @@
         height: 70px;
         color: #06266f;
         font-size: 40px;
+        font-weight: bold;
+        font-family: "Open Sans";
+        padding-left: 10%;
+    }
+    .name_cours {
+
+        height: 40px;
+        color: #06266f;
+        font-size: 20px;
         font-weight: bold;
         font-family: "Open Sans";
         padding-left: 10%;

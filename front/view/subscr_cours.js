@@ -2,7 +2,7 @@ class SubscrCoursView {
     static onLoad()
     {
         let text = document.getElementById("main").innerHTML;
-        text +="<div>Курсы</div>";
+        text +="<div class='name_cours'>Курсы</div>";
 
         document.getElementById("main").innerHTML=text;
     }
@@ -12,7 +12,7 @@ class SubscrCoursView {
         let text = document.getElementById("main").innerHTML;
         text +="<div class='cours_list_cab'>";
         for (let i=0; i<cours.length;i++) {
-            text +="<div onclick='SubscrCoursController.goToCours("+cours[i].id+")' class='cours_cab'><img src='https://lern.tiwy.ru/"+cours[i].img+"'>"+cours[i].name+"</div>";
+            text +="<div onclick='SubscrCoursController.goToCours("+cours[i].id+")' class='cours_cab'><img src='https://tiwy.ru/"+cours[i].img+"'>"+cours[i].name+"</div>";
         }
         text +="</div>";
         document.getElementById("main").innerHTML=text;

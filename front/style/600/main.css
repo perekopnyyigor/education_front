@@ -102,4 +102,13 @@
         font-weight: bold;
         color: #012e67;
     }
+    .name_cours {
+
+        height: 40px;
+        color: #06266f;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: "Open Sans";
+        padding-left: 10%;
+    }
 }

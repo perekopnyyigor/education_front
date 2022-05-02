@@ -11,9 +11,12 @@ class MyCoursController {
     {
         MainView.head();
         CabinetView.onload();
+
+
+
         User.findMyCours();
         MyCoursView.showCours(User.message);
-        MyCoursView.form();
+
 
     }
     //редактирование курса
@@ -74,7 +77,7 @@ class MyCoursController {
     static goToRedactSimple(article_id)
     {
         localStorage.setItem("article_id",article_id);
-        window.location.href = 'https://lern.tiwy.ru/front/pages/simple_redactor.html'
+        window.location.href = 'https://tiwy.ru/front/pages/simple_redactor.html'
 
     }
     static deleteCours(id)
@@ -82,7 +85,7 @@ class MyCoursController {
         let del = confirm("Вы действилельно хотите удалить курс и все вложенные темы?");
         if(del)
             Cours.delete(id);
-        alert(Cours.message);
+        //alert(Cours.message);
 
     }
     static goToOptions(id,cours)
@@ -95,14 +98,40 @@ class MyCoursController {
         MyCoursView.showChapter(Cours.message);
 
         Article.getArticle(id);
-        alert(Article.message);
+
         MyCoursView.optionForm(Article.message);
     }
     static setOption()
     {
         let option = MyCoursView.getDataOption();
         Article.saveOption(option,option.file);
-        alert(Article.message);
+
+    }
+    static coursOption(id)
+    {
+        MyCoursController.onload();
+        Cours.findOneCours(id);
+        //alert(Cours.message);
+        MyCoursView.optionCoursForm(Cours.message);
+    }
+    static setCoursOption()
+    {
+        let option = MyCoursView.getDataOptionCours();
+        Cours.saveOption(option,option.file);
+        alert(Cours.message);
+
+    }
+    static createCousForm()
+    {
+        MainView.head();
+        CabinetView.onload();
+
+
+
+        User.findMyCours();
+        MyCoursView.showCours(User.message);
+
+        MyCoursView.form();
     }
 
 }

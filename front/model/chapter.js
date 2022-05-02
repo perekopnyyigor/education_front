@@ -5,7 +5,7 @@ class Chapter
     {
         let chapter_json = JSON.stringify(chapter);
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://lern.tiwy.ru/back/responze/chapter.php?action=add", false);
+        xhttp.open("POST", "https://tiwy.ru/back/responze/chapter.php?action=add", false);
         let formData = new FormData();
         formData.append("chapter", chapter_json);
 

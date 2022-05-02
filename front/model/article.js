@@ -11,7 +11,7 @@ class Article
             };
             let article_json = JSON.stringify(article);
             const xhttp = new XMLHttpRequest();
-            xhttp.open("POST", "https://lern.tiwy.ru/back/responze/article.php?action=add", false);
+            xhttp.open("POST", "https://tiwy.ru/back/responze/article.php?action=add", false);
             let formData = new FormData();
             formData.append("article", article_json);
 
@@ -29,7 +29,7 @@ class Article
         };
         let article_json = JSON.stringify(article);
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://lern.tiwy.ru/back/responze/article.php?action=save", false);
+        xhttp.open("POST", "https://tiwy.ru/back/responze/article.php?action=save", false);
         let formData = new FormData();
         formData.append("article", article_json);
 
@@ -42,7 +42,7 @@ class Article
 
         let option_json = JSON.stringify(option);
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://lern.tiwy.ru/back/responze/article.php?action=save_option", false);
+        xhttp.open("POST", "https://tiwy.ru/back/responze/article.php?action=save_option", false);
         let formData = new FormData();
         formData.append("option", option_json);
         formData.append("file[]", file);
@@ -53,7 +53,7 @@ class Article
     static getArticle(id)
     {
             const xhttp = new XMLHttpRequest();
-            xhttp.open("GET", "https://lern.tiwy.ru/back/responze/article.php?action=article&id="+id, false);
+            xhttp.open("GET", "https://tiwy.ru/back/responze/article.php?action=article&id="+id, false);
 
             xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -64,7 +64,7 @@ class Article
     {
 
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://lern.tiwy.ru/back/responze/article.php?action=add_img", false);
+        xhttp.open("POST", "https://tiwy.ru/back/responze/article.php?action=add_img", false);
         let formData = new FormData();
         formData.append("file[]", file);
         formData.append("article", article);
@@ -74,7 +74,7 @@ class Article
     static findArticles()
     {
         const xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "https://lern.tiwy.ru/back/responze/article.php?action=all_article", false);
+        xhttp.open("GET", "https://tiwy.ru/back/responze/article.php?action=all_article", false);
         let formData = new FormData();
         xhttp.send();
         Article.message = xhttp.responseText;
@@ -88,7 +88,7 @@ class Article
             }
         };
 
-        xhttp.open("GET", "https://lern.tiwy.ru/back/responze/article.php?action=article",true);
+        xhttp.open("GET", "https://tiwy.ru/back/responze/article.php?action=article",true);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
         xhttp.send();

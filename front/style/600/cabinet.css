@@ -2,17 +2,19 @@
 @media (max-width: 600px) {
     .form {
         margin-left: 10%;
-        width: 40%;
+        width: 20%;
         float: left;
     }
 
     .form input, select {
         margin-left: 5%;
+        margin-top: 5px;
         width: 50%;
         float: left;
     }
 
     .form button {
+        margin-top: 5px;
         margin-left: 5%;
         width: 50%;
         float: left;

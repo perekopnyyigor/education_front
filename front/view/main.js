@@ -5,7 +5,7 @@ class MainView {
 
         text += "<div class='name'>tiwy - сайт для создания курсов и конспектов </div>";
         text +="<ul  class='main_menu'>";
-        text +="<li  class='main_punkt'><a href='https://lern.tiwy.ru/'>Главная</a></li>";
+        text +="<li  class='main_punkt'><a href='https://tiwy.ru/'>Главная</a></li>";
         text +="<li  class='main_punkt' onclick='MainController.cabinet()'>Кабинет</li></ul>";
         document.getElementById("main").innerHTML=text;
     }
@@ -37,10 +37,10 @@ class MainView {
         for (let i=0; i<cours.length;i++) {
 
 
-            text +="<a href='https://lern.tiwy.ru/?type=cours&id="+cours[i].id+"'>";
+            text +="<a href='https://tiwy.ru/?type=cours&id="+cours[i].id+"'>";
             text +="<div class='cours'>";
             text +="<div class='cours_name'>"+cours[i].name+"</div>";
-            text +=  "<img src='https://lern.tiwy.ru/"+cours[i].img+"'></div></a>";
+            text +=  "<img src='https://tiwy.ru/"+cours[i].img+"'></div></a>";
         }
 
         document.getElementById("main").innerHTML=text;
@@ -54,12 +54,12 @@ class MainView {
 
 
         for (let i=0; i<article.length;i++) {
-            text +="<a href='https://lern.tiwy.ru/back/responze/article.php?action=article_seo&id="+article[i].id+"'>";
+            text +="<a href='https://tiwy.ru/back/responze/article.php?action=article_seo&id="+article[i].id+"'>";
 
             text +="<div class='cours'>";
             text +="<div class='cours_name'>"+article[i].name+"</div>";
             if(article[i].img!=null)
-                text +="<img src='https://lern.tiwy.ru/"+article[i].img+"'>";
+                text +="<img src='https://tiwy.ru/"+article[i].img+"'>";
             if(article[i].description!=null)
                 text +="<div class='cours_description'>"+ article[i].description+"</div>";
             text +="</div></a>";

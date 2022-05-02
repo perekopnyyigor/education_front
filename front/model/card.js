@@ -4,7 +4,7 @@ class Card {
     {
         let card_json = JSON.stringify(card);
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://lern.tiwy.ru/back/responze/card.php?action=add", false);
+        xhttp.open("POST", "https://tiwy.ru/back/responze/card.php?action=add", false);
         let formData = new FormData();
         formData.append("card", card_json);
 
@@ -19,7 +19,7 @@ class Card {
         }
         let cards_json = JSON.stringify(cards);
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://lern.tiwy.ru/back/responze/card.php?action=find", false);
+        xhttp.open("POST", "https://tiwy.ru/back/responze/card.php?action=find", false);
         let formData = new FormData();
         formData.append("cards", cards_json);
 

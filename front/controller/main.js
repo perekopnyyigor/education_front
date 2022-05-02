@@ -31,7 +31,8 @@ class MainController {
         Cours.findChapter(cours_id);
         //alert(Cours.message);
         ShowCoursView.showChapter(Cours.message);
-        ShowCoursView.coursInfo(cours_id);
+        Cours.findOneCours(cours_id);
+        ShowCoursView.coursInfo(Cours.message);
     }
     static goToArticle(id)
     {

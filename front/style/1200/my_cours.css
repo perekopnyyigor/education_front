@@ -1,8 +1,8 @@
 @media (min-width: 1201px) {
     .cours_list_cab {
         margin-top: 20px;
-
-        width: 60%;
+        margin-left:10%;
+        width: 30%;
         margin-bottom: 50px;
         float: left;
 
@@ -48,7 +48,7 @@
         margin-left: 25%;
     }
 
-    /*список глав*/
+    /*Ã‘ÂÃÂ¿ÃÂ¸Ã‘ÂÃÂ¾ÃÂº ÃÂ³ÃÂ»ÃÂ°ÃÂ²*/
     .chapter_list {
         margin-left: 0%;
         width: 20%;
@@ -111,10 +111,10 @@
         float: left;
     }
 
-    /*свойство*/
+    /*Ã‘ÂÃÂ²ÃÂ¾ÃÂ¹Ã‘ÂÃ‘â€šÃÂ²ÃÂ¾*/
     .seo_form {
         margin-left: 5%;
-        width: 40%;
+        width: 20%;
         float: left;
     }
 
@@ -131,12 +131,24 @@
         width: 30%;
     }
 
-    .seo_form input {
+    .seo_form select , .seo_form input , .form input, .form select {
         height: 40px;
 
         border: 2px solid #2b6684;
         border-radius: 5px;
         background-color: white;
+        box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+        width: 300px;
+
+    }
+
+    .seo_form button, .form button {
+        height: 40px;
+
+        color: white;
+        border: 2px solid #2b6684;
+        border-radius: 5px;
+        background-color: #2b6684;
         box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
         width: 300px;
 
@@ -152,4 +164,51 @@
         width: 300px;
 
     }
+
+    /*create_cours_form----------------*/
+    .create_cours_form {
+        margin-left: 5%;
+        width: 20%;
+        float:left;
+
+    }
+
+
+
+
+
+    .create_cours_form select , .create_cours_form input {
+        height: 40px;
+        margin-top:10px;
+        border: 2px solid #2b6684;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+        width: 300px;
+
+    }
+
+    .create_cours_form button, .create_cours_form button {
+        height: 40px;
+        margin-top:10px;
+        color: white;
+        border: 2px solid #2b6684;
+        border-radius: 5px;
+        background-color: #2b6684;
+        box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+        width: 300px;
+
+    }
+
+    .create_cours_form textarea {
+        height: 80px;
+
+        border: 2px solid #2b6684;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 14px 28px rgba(06, 26, 61, 0.25), 0 10px 10px rgba(06, 26, 61, 0.22);
+        width: 300px;
+
+    }
+
 }

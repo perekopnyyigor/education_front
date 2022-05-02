@@ -4,7 +4,7 @@ class RepeatController {
         MainView.head();
 
         CabinetView.onload();
-        User.findMyCours();
+        User.findSubscrib();
         RepeatView.showCours(User.message);
 
 

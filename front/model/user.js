@@ -8,7 +8,7 @@ class User {
     {
         let user_json = JSON.stringify(user);
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://lern.tiwy.ru/back/responze/user.php?action=reg", false);
+        xhttp.open("POST", "https://tiwy.ru/back/responze/user.php?action=reg", false);
         let formData = new FormData();
         formData.append("user", user_json);
         xhttp.send(formData);
@@ -18,7 +18,7 @@ class User {
     {
         let user_json = JSON.stringify(user);
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://lern.tiwy.ru/back/responze/user.php?action=enter", false);
+        xhttp.open("POST", "https://tiwy.ru/back/responze/user.php?action=enter", false);
         let formData = new FormData();
         formData.append("user", user_json);
         xhttp.send(formData);
@@ -46,7 +46,7 @@ class User {
     {
         User.ini();
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://lern.tiwy.ru/back/responze/user.php?action=my_cours", false);
+        xhttp.open("POST", "https://tiwy.ru/back/responze/user.php?action=my_cours", false);
         let formData = new FormData();
         formData.append("user", User.id);
         xhttp.send(formData);
@@ -57,7 +57,7 @@ class User {
     {
         User.ini();
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://lern.tiwy.ru/back/responze/user.php?action=subscrib", false);
+        xhttp.open("POST", "https://tiwy.ru/back/responze/user.php?action=subscrib", false);
         let formData = new FormData();
         formData.append("user", User.id);
         formData.append("cours", cours_id);
@@ -68,7 +68,7 @@ class User {
     {
         User.ini();
         const xhttp = new XMLHttpRequest();
-        xhttp.open("GET", "https://lern.tiwy.ru/back/responze/user.php?action=findSubscrib&user="+User.id, false);
+        xhttp.open("GET", "https://tiwy.ru/back/responze/user.php?action=findSubscrib&user="+User.id, false);
 
         xhttp.send();
         User.message = xhttp.responseText;
@@ -77,7 +77,7 @@ class User {
     {
         User.ini();
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://lern.tiwy.ru/back/responze/user.php?action=add_lesson", false);
+        xhttp.open("POST", "https://tiwy.ru/back/responze/user.php?action=add_lesson", false);
         let formData = new FormData();
         formData.append("user", User.id);
         formData.append("article", article_id);
@@ -88,7 +88,7 @@ class User {
     {
         User.ini();
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://lern.tiwy.ru/back/responze/user.php?action=get_lesson_data", false);
+        xhttp.open("POST", "https://tiwy.ru/back/responze/user.php?action=get_lesson_data", false);
         let formData = new FormData();
         formData.append("user", User.id);
         formData.append("article", article_id);
@@ -99,7 +99,7 @@ class User {
     {
         User.ini();
         const xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "https://lern.tiwy.ru/back/responze/user.php?action=get_repeat", false);
+        xhttp.open("POST", "https://tiwy.ru/back/responze/user.php?action=get_repeat", false);
         let formData = new FormData();
         formData.append("user", User.id);
         formData.append("cours", id);

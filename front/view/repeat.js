@@ -19,7 +19,7 @@ class RepeatView {
 
             text+="<div onclick='RepeatController.goToArticle("+lesson[i].article_id+","+lesson[i].article.cours+")' class='repeat_menu_punkt'>";
             text +="<div class='repeat_menu_punkt_name' >"+lesson[i].article.name+"</div>";
-            text +="<img src='https://lern.tiwy.ru/"+lesson[i].article.img+"'>";
+            text +="<img src='https://tiwy.ru/"+lesson[i].article.img+"'>";
             text +="<div>Повторений: "+lesson[i].count+"</div>";
             text +="<div>Последнее: "+lesson[i].days.toFixed(0)+"дн. назад</div></div>";
         }
@@ -68,10 +68,10 @@ class RepeatView {
     {
         let cours = JSON.parse(cours_js);
         let text = document.getElementById("main").innerHTML;
-        text +="<div>Для повторения</div>";
+        text +="<div class='name_cours'>Для повторения</div>";
         text +="<div class='cours_list_cab'>";
         for (let i=0; i<cours.length;i++) {
-            text +="<div class='cours_cab' onclick='RepeatController.goToArticle("+null+","+cours[i].id+")'><img src='https://lern.tiwy.ru/"+cours[i].img+"'>"+cours[i].name;
+            text +="<div class='cours_cab' onclick='RepeatController.goToArticle("+null+","+cours[i].id+")'><img src='https://tiwy.ru/"+cours[i].img+"'>"+cours[i].name;
             text +="</div>";
         }
         text +="</div>";

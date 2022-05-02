@@ -18,7 +18,7 @@ class ShowCoursView {
             {
                 for (let j=0; j<chapter[i].articles.length;j++)
                 {
-                    text +="<a href='https://lern.tiwy.ru/?type=article&id="+chapter[i].articles[j].id+"'>";
+                    text +="<a href='https://tiwy.ru/?type=article&id="+chapter[i].articles[j].id+"'>";
                     text +="<div class='article_show'>"+chapter[i].articles[j].name+"</div></a>";
                 }
 
@@ -28,12 +28,15 @@ class ShowCoursView {
 
         document.getElementById("main").innerHTML=text;
     }
-    static coursInfo(id)
+    static coursInfo(cours_json)
     {
-
+        let cours = JSON.parse(cours_json);
         let text = document.getElementById("main").innerHTML;
-        text +="<div>Чтобы добавить материалы в избранное запишитесь на курс</div>";
-        text +="<button onclick='ShowCoursController.subscrib("+id+")'>Записаться</button>";
+        text +="<div class='name_cours'>"+cours.name+"</div>";
+        text +="<img width='200px' src='https://tiwy.ru/"+cours.img+"'>";
+        text +="<div class='name_cours'>Описание: "+cours.description+"</div>";
+        text +="<div class='name_cours'>Чтобы добавить материалы в избранное запишитесь на курс</div>";
+        text +="<button onclick='ShowCoursController.subscrib("+cours.id+")'>Записаться</button>";
         document.getElementById("main").innerHTML=text;
     }
     static article(json_article)

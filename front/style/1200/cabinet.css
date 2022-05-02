@@ -1,19 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
 @media (min-width: 1201px) {
     .form {
-        margin-left: 10%;
-        width: 40%;
+        margin-left: 40%;
+        width: 20%;
         float: left;
     }
 
     .form input, select {
         margin-left: 5%;
+        margin-top:10px;
         width: 50%;
         float: left;
     }
 
     .form button {
         margin-left: 5%;
+        margin-top:10px;
         width: 50%;
         float: left;
     }
